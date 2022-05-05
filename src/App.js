@@ -1,10 +1,12 @@
 import './App.css';
-import StateTut from './components/use_state/StateTut';
+import StateTut from './components/useState/StateTut';
+import ReducerTut from './components/useReducer/ReducerTut';
 
 function App() {
   return (
     <div className="app">
-      <StateTut />
+      {/* <StateTut /> */}
+      <ReducerTut />
     </div>
   );
 }
