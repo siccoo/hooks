@@ -1,21 +1,27 @@
-import React, {useState} from 'react'
+import React, { useReducer } from 'react';
+
+const reducer = () => {
+
+}
 
 const ReducerTut = () => {
-    const [count, setCount] = useState(0);
-    const [showText, setShowText] = useState(true)
-  return (
-    <div>
-        <h1>{count}</h1>
-        <button onClick={() => {
-            setCount(count + 1);
-            setShowText(!showText);
-        }}>
-            Click me
-        </button>
-        
-        {showText && <p>This is a text</p>}
-    </div>
-  )
+    const [state, dispatch] = useReducer(reducer,{
+        count:0,
+        showText:true
+    })
+    return (
+        <div>
+            <h1>{count}</h1>
+            <button onClick={() => {
+                setCount(count + 1);
+                setShowText(!showText);
+            }}>
+                Click me
+            </button>
+
+            {showText && <p>This is a text</p>}
+        </div>
+    )
 }
 
 export default ReducerTut
