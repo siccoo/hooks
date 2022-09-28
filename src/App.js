@@ -5,6 +5,7 @@ import EffectTut from './components/useEffect/EffectTut';
 import RefTut from './components/useRef/RefTut';
 import LayoutEffectTut from "./components/useLayoutEffect/LayoutEffectTut";
 import ImperativeHandle from './components/useImperativeHandle/ImperativeHandle';
+import ContextTut from './components/useContext/ContextTut';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <EffectTut /> */}
       {/* <RefTut /> */}
       {/* <LayoutEffectTut/> */}
-      <ImperativeHandle />
+      {/* <ImperativeHandle /> */}
+      <ContextTut />
     </div>
   );
 }
