@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 // when you would like to manipulate DOM elements like document.getElementById or document.getElementByClass
 
 const RefTut = () => {
-    const inputRef = useRef();
+    const inputRef = useRef(null);
 
     const handleClick = () => {
         console.log(inputRef.current.value);  
