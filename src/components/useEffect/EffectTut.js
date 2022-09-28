@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-// useEffect hook is a function that's called whenever the page re-renders
+// useEffect hook is a function that's called after the page re-renders
 
 const EffectTut = () => {
 const [data, setData] = useState("");
